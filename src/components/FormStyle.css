@@ -1,27 +1,60 @@
-/* FormStyle.css */
-.form label {
-    color: #fff;
-    margin-bottom: 0.5rem;
-  }
-  
-  .form form {
+.contact-section {
+    background: linear-gradient(180deg, #071013, #0c191d);
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: clamp(36px, 7vw, 96px);
+    align-items: start;
+}
+
+.contact-layout p {
+    color: var(--muted);
+}
+
+.contact-card {
+    display: grid;
+    gap: 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.035);
+    padding: 24px;
+}
+
+.contact-card a,
+.contact-card button {
     display: flex;
-    flex-direction: column;
-    padding: 4rem 1rem;
-    margin: auto;
-    max-width: 600px;
-  }
-  
-  .notify{
-    text-align: center;
-  }
-  .form input,
-  .form textarea {
-    margin-bottom: 1rem;
-    padding: 10px 18px;
-    font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.1);
-    color: #f4f4f4;
-  }
-  
+    align-items: center;
+    justify-content: space-between;
+    min-height: 52px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.045);
+    color: var(--text);
+    font: inherit;
+    font-weight: 750;
+    padding: 12px 14px;
+}
+
+.contact-card a::after {
+    content: "Open";
+    color: var(--teal);
+    font-size: 0.82rem;
+}
+
+.contact-card button {
+    cursor: pointer;
+}
+
+.contact-card button::after {
+    content: "Copy";
+    color: var(--amber);
+    font-size: 0.82rem;
+}
+
+@media screen and (max-width: 920px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}

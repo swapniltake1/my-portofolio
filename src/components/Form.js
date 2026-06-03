@@ -1,46 +1,42 @@
-import React, { useRef, useState } from 'react';
-import './FormStyle.css'
-import emailjs from 'emailjs-com';
+import React, { useState } from 'react';
+import './FormStyle.css';
 
 const Form = () => {
-  emailjs.init('');
-  const formRef = useRef();
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [copied, setCopied] = useState(false);
+  const email = 'swapniltake1@outlook.com';
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('', '', formRef.current)
-      .then((result) => {
-        console.log('Email sent successfully!', result.text);
-        setSubmitStatus('submitted');
-        setTimeout(() => {
-          setSubmitStatus(null);
-        }, 5000);
-      })
-      .catch((error) => {
-        console.error('There was an error sending the email:', error);
-        setSubmitStatus('notSubmitted');
-      });
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      window.location.href = `mailto:${email}`;
+    }
   };
 
   return (
-    <div className='form'>
-      
-      <form ref={formRef} >
-        <label> Your Name </label>
-        <input type='text' name='name' id='name' required />
-        <label> Email </label>
-        <input type='email' name='email' id='email' required />
-        <label> Subject </label>
-        <input type='text' name='subject' id='subject' required />
-        <label> Your Message </label>
-        <textarea rows='6' placeholder='Type your message' id='message' name='message' required />
-        {submitStatus === 'submitted' && <p className='submitted notify' style={{ color: 'Green' }}>Form submitted successfully, I'll get back to you asap!</p>}
-        {submitStatus === 'notSubmitted' && <p className='not-submitted notify' style={{ color: 'red' }}>Form not submitted. Please try again later.</p>}
-        <button className='btn' type='submit'>Submit</button>
-      </form>
-    </div>
+    <section className='contact-section section'>
+      <div className='container contact-layout'>
+        <div className='section-intro'>
+          <p className='eyebrow'>Contact</p>
+          <h2>Open to data engineering roles and collaborations.</h2>
+          <p>
+            Best fit: ETL development, SQL engineering, warehouse support, cloud data migration,
+            and analytics platform work.
+          </p>
+        </div>
+
+        <div className='contact-card'>
+          <a href={`mailto:${email}`}>{email}</a>
+          <a href='https://www.linkedin.com/in/swapniltake1' target='_blank' rel='noreferrer'>LinkedIn</a>
+          <a href='https://github.com/swapniltake1' target='_blank' rel='noreferrer'>GitHub</a>
+          <a href='https://www.youtube.com/@thecodebreaker' target='_blank' rel='noreferrer'>YouTube</a>
+          <button type='button' onClick={copyEmail}>{copied ? 'Email Copied' : 'Copy Email'}</button>
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
 export default Form;

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapnil Take | Data Engineer Resume</title>
+    <style>
+      :root {
+        --ink: #132027;
+        --muted: #5e6b72;
+        --line: #d8e0e4;
+        --blue: #0f6ab8;
+        --teal: #0f8b7f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #e8eef1;
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      .resume {
+        width: min(100% - 32px, 900px);
+        margin: 32px auto;
+        padding: 42px;
+        background: #fff;
+        box-shadow: 0 18px 50px rgba(19, 32, 39, 0.16);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+        border-bottom: 3px solid var(--blue);
+        padding-bottom: 22px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 6px;
+        font-size: 2.5rem;
+        line-height: 1;
+      }
+
+      header p,
+      .contact,
+      section p,
+      li,
+      .row span {
+        color: var(--muted);
+      }
+
+      .contact {
+        display: grid;
+        gap: 5px;
+        text-align: right;
+        font-size: 0.95rem;
+      }
+
+      section {
+        border-bottom: 1px solid var(--line);
+        padding: 24px 0;
+      }
+
+      section:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      h2 {
+        color: var(--teal);
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 1.08rem;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skills span {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.92rem;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      ul {
+        margin: 0 0 20px;
+        padding-left: 20px;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .resume {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .resume {
+          padding: 26px;
+        }
+
+        header,
+        .row {
+          display: block;
+        }
+
+        .contact {
+          margin-top: 18px;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="resume">
+      <header>
+        <div>
+          <h1>Swapnil Take</h1>
+          <p>Data Engineer - 2.5 Years Experience</p>
+        </div>
+        <div class="contact">
+          <a href="mailto:swapniltake1@outlook.com">swapniltake1@outlook.com</a>
+          <a href="https://www.linkedin.com/in/swapniltake1">linkedin.com/in/swapniltake1</a>
+          <a href="https://github.com/swapniltake1">github.com/swapniltake1</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p>
+          Data Engineer with 2.5 years of experience designing, developing, and maintaining ETL
+          pipelines, SQL transformations, data validation checks, warehouse loads, and analytics-ready
+          datasets. Strong focus on production reliability, reconciliation, performance tuning, and
+          cross-functional reporting support.
+        </p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Shell Scripting</span>
+          <span>Java</span>
+          <span>ETL / ELT</span>
+          <span>Data Warehousing</span>
+          <span>DB2</span>
+          <span>Oracle</span>
+          <span>MySQL</span>
+          <span>PostgreSQL</span>
+          <span>Spark</span>
+          <span>Hadoop</span>
+          <span>AWS S3</span>
+          <span>AWS Glue</span>
+          <span>Azure Data Factory</span>
+          <span>Airflow</span>
+          <span>Control-M</span>
+          <span>Jenkins</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+        <article>
+          <div class="row">
+            <h3>Data Engineer</h3>
+            <span>2024 - Present</span>
+          </div>
+          <ul>
+            <li>Developed and maintained ETL pipelines for large enterprise datasets and reporting workflows.</li>
+            <li>Automated source-to-target validation checks for counts, nulls, duplicates, and freshness.</li>
+            <li>Optimized SQL transformations to improve load performance and reduce manual intervention.</li>
+            <li>Supported production jobs through monitoring, incident resolution, and root-cause analysis.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="row">
+            <h3>Associate Data Engineer</h3>
+            <span>2023 - 2024</span>
+          </div>
+          <ul>
+            <li>Created reusable scripts for extraction, transformation, reconciliation, and operational reporting.</li>
+            <li>Worked with reporting teams to deliver analytics-ready tables and KPI extracts.</li>
+            <li>Documented job dependencies, runbooks, transformation logic, and data lineage.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Selected Projects</h2>
+        <article>
+          <h3>Enterprise Data Warehouse Pipeline</h3>
+          <p>Batch ingestion, transformation, validation, and publishing workflow for curated reporting tables.</p>
+        </article>
+        <article>
+          <h3>Automated Data Quality Monitoring</h3>
+          <p>Python and orchestration-based checks for schema drift, threshold failures, duplicates, and load freshness.</p>
+        </article>
+        <article>
+          <h3>Cloud Data Lake Migration</h3>
+          <p>Raw, cleansed, and curated data zone plan using cloud storage, cataloging, and reusable ingestion standards.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

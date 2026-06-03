@@ -1,33 +1,30 @@
-import { Link } from 'react-router-dom';
 import './AboutContentStyle.css';
-import Skill1 from '../assets/Java backgroud.png';
-import Skill2 from '../assets/reactjs.png';
-import React from 'react'
+import React from 'react';
 
 const AboutContent = () => {
   return (
-    <div className='about'>
-
-   <div className='left'>
-     <h1> Who am i ?</h1>
-     <p> Hey, I'm Swapnil. I really enjoy working with computers and making cool things with them.</p>
-      <p>  Let's team up and create awesome stuff! </p>
-     <Link to='/swapniltake/contact' className='btn'>Contact</Link>
-   </div>
-
-   <div className='right'>
-     <div className='img-container'>
-        <div className='img-stack top'>
-            <img src={Skill1} alt='img' className='img' />
+    <section className='about section'>
+      <div className='container about-grid'>
+        <div className='section-intro'>
+          <p className='eyebrow'>About</p>
+          <h2>Data engineering with production ownership.</h2>
         </div>
-        <div className='img-stack bottom'>
-            <img src={Skill2} alt='img' className='img' />
+        <div className='about-copy'>
+          <p>
+            I am a Data Engineer with 2.5 years of experience designing, developing,
+            and supporting data integration solutions for enterprise datasets. My work
+            spans SQL-heavy data processing, Python automation, ETL orchestration,
+            validation frameworks, reporting support, and production incident handling.
+          </p>
+          <p>
+            I enjoy making data systems cleaner, faster, and easier to operate. That means
+            thinking beyond code: clear lineage, stable schedules, reconciliation checks,
+            performance tuning, and practical documentation for the people who depend on the data.
+          </p>
         </div>
-     </div>
+      </div>
+    </section>
+  );
+};
 
-   </div>
-    </div>
-  )
-}
-
-export default AboutContent
+export default AboutContent;

@@ -1,0 +1,37 @@
+.cert-band {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 42px;
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: clamp(28px, 5vw, 52px);
+    background:
+        linear-gradient(135deg, rgba(73, 167, 255, 0.16), rgba(68, 208, 189, 0.08)),
+        var(--surface);
+}
+
+.cert-band h2 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    line-height: 1.08;
+}
+
+.cert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cert-list span {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #dceff2;
+    padding: 12px 14px;
+}
+
+@media screen and (max-width: 900px) {
+    .cert-band {
+        grid-template-columns: 1fr;
+    }
+}

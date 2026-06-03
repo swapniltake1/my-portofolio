@@ -3,26 +3,28 @@ import React from 'react';
 
 const WorkCard = (props) => {
   return (
-    <div className='project-card'>
-      <img src={props.imgsrc} alt='img' />
+    <article className='project-card'>
+      <div className='project-meta'>
+        <span>{props.category}</span>
+        <span>{props.stack}</span>
+      </div>
       <h2 className='project-title'>{props.title}</h2>
-      <div className='pro-details'>
-        <p>{props.text1}</p>
-      </div>
-      <div className='pro-details'>
-        <p>{props.text2}</p>
-      </div>
+      <p className='project-summary'>{props.summary}</p>
+      <ul className='project-highlights'>
+        {props.highlights.map((highlight) => (
+          <li key={highlight}>{highlight}</li>
+        ))}
+      </ul>
       <div className='pro-btn'>
-        <a href={props.view} className='btn' target="_blank" rel="noopener noreferrer">
-          View Project
+        <a href={props.view} className='btn btn-light' target='_blank' rel='noopener noreferrer'>
+          View Case Study
         </a>
-
-        <a href={props.source} className='btn' target="_blank" rel="noopener noreferrer">
-          Project Source
+        <a href={props.source} className='btn' target='_blank' rel='noopener noreferrer'>
+          GitHub
         </a>
       </div>
-    </div>
+    </article>
   );
-}
+};
 
 export default WorkCard;

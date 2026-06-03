@@ -1,44 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-family: "Outfit", sans-serif;
+:root {
+  --bg: #071013;
+  --surface: #0c1a1f;
+  --surface-strong: #12262d;
+  --text: #eef7f8;
+  --muted: #a9bdc2;
+  --line: rgba(255, 255, 255, 0.12);
+  --blue: #49a7ff;
+  --teal: #44d0bd;
+  --amber: #f3b44b;
+  --shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
+  --max: 1180px;
 }
 
-body{
-  background-color: #000;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h5, h4, p, a{
-  color: #fff;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  color: inherit;
   text-decoration: none;
 }
 
-ul{
-  list-style-type: none;
+ul {
+  list-style-position: inside;
 }
 
-.btn{
-  padding: 12px 32px;
-  font-size: 1rem;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 92px 0;
+}
+
+.section-muted {
+  background: #0a171b;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  color: var(--teal);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgb(248, 217, 15);
-  color: #222;
-  border: 1px solid #fff;
-  font-weight: 600;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+
+.section-heading h2,
+.section-intro h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  color: #031014;
+  font-size: 0.96rem;
+  font-weight: 850;
+  line-height: 1;
   cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
-.btn-light{
-  background: transparent;
-  color: #fff;
-  
+.btn:hover {
+  transform: translateY(-2px);
 }
 
-.btn:hover{
-  background: rgba(255,255,255,0.2);
-  color: #fff;
-  transition: 0.3s;
+.btn-light {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    width: min(calc(100% - 28px), var(--max));
+  }
+
+  .section {
+    padding: 68px 0;
+  }
 }

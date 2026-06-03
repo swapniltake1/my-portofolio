@@ -4,18 +4,18 @@ import Footer from '../components/Footer';
 import HeroImg2 from '../components/HeroImg2';
 import Form from '../components/Form';
 
-
 export const Contact = () => {
-
-
   return (
     <div>
       <Navbar />
-      <HeroImg2 heading="Contact Me" text="Contact Form Inactive Due to Spam: Reach Out at swapniltake1@outlook.com Instead" />
+      <HeroImg2
+        heading='Contact'
+        text='Open to data engineering roles, cloud data work, ETL projects, and analytics platform collaboration.'
+      />
       <Form />
-     <Footer />
+      <Footer />
     </div>
-  )
+  );
 };
 
 export default Contact;

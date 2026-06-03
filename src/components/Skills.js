@@ -1,47 +1,59 @@
 import './SkillsStyles.css';
-import { Link } from 'react-router-dom';
 import React from 'react';
 
 const Skills = () => {
+  const skills = [
+    {
+      number: '01',
+      title: 'Languages',
+      items: 'Python, SQL, Shell Scripting, Java'
+    },
+    {
+      number: '02',
+      title: 'Data Engineering',
+      items: 'ETL, ELT, data modeling, data warehousing, reconciliation, data quality rules'
+    },
+    {
+      number: '03',
+      title: 'Databases',
+      items: 'DB2, Oracle, MySQL, PostgreSQL, query tuning, stored procedures'
+    },
+    {
+      number: '04',
+      title: 'Big Data and Cloud',
+      items: 'Spark, Hadoop, AWS S3, AWS Glue, Lambda, Azure Data Factory'
+    },
+    {
+      number: '05',
+      title: 'Orchestration',
+      items: 'Airflow, Control-M, Jenkins, scheduled batch operations, job monitoring'
+    },
+    {
+      number: '06',
+      title: 'Analytics',
+      items: 'Power BI, Tableau, dashboard-ready datasets, KPI extracts, reporting support'
+    }
+  ];
+
   return (
-    <div className='skills'>
-      <div className='card-container'>
-        <div className='card'>
-          <p className='btc'> - Java - </p>
-          <span className='bar'> </span>
-          <p> Core Java </p>
-          <p>Advanced Java</p>
-          <p>J2EE/Jsp-Servlet/Thymeleaf</p>
-          <p>JDBC/Hibernate/JPA</p>
-          <p>Spring & Spring Boot</p>
+    <section className='skills section section-muted'>
+      <div className='container'>
+        <div className='section-heading'>
+          <p className='eyebrow'>Technical Skills</p>
+          <h2>Tools I use to build dependable data platforms.</h2>
         </div>
-
-        <div className='card'>
-          <p className='btc'> - React - </p>
-          <span className='bar'> </span>
-          <p> Html </p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>Bootstrap/ReactStrap</p>
-          <p>Responsive Designs </p>
+        <div className='skill-grid'>
+          {skills.map((skill) => (
+            <article className='skill-card' key={skill.title}>
+              <span>{skill.number}</span>
+              <h3>{skill.title}</h3>
+              <p>{skill.items}</p>
+            </article>
+          ))}
         </div>
-
-        <div className='card'>
-          <p className='btc'> - Other - </p>
-          <span className='bar'> </span>
-          <p> MySQL/MongoDB</p>
-          <p>Git/GitHub/Bitbucket/SourceTree</p>
-          <p>Redis/ApacheMQ</p>
-          <p>Open Source Integrations </p>
-          <p>Postman/Swagger/Mockito</p>
-        </div>
-
       </div>
-      <div className="button-container">
-          <Link to="/swapniltake/contact" className='btn'> Contact me </Link>
-        </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Skills;

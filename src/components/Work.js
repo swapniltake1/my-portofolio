@@ -3,28 +3,31 @@ import React from 'react';
 import WorkCard from './WorkCard';
 import WorkCardData from './WorkCardData';
 
-
 const Work = () => {
   return (
-    <div className='work-container'>
-    <h1 className='project-heading'> Projects </h1>
-    <div className='project-container'>
-        
-        {WorkCardData.map((val, ind) =>{
-          return(
-            <WorkCard 
-            key={ind}
-            imgsrc={val.imgsrc}
-            title={val.title}
-            text1={val.text1}
-            text2={val.text2}
-            view={val.view}
-            source={val.source} />
-          )
-        })}
-    </div>
-    </div>
-  )
-}
+    <section className='work-container section section-muted'>
+      <div className='container'>
+        <div className='section-heading'>
+          <p className='eyebrow'>Featured Projects</p>
+          <h2>Realistic data engineering work samples.</h2>
+        </div>
+        <div className='project-container'>
+          {WorkCardData.map((val) => (
+            <WorkCard
+              key={val.title}
+              title={val.title}
+              category={val.category}
+              stack={val.stack}
+              summary={val.summary}
+              highlights={val.highlights}
+              view={val.view}
+              source={val.source}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Work
+export default Work;

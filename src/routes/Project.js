@@ -8,7 +8,10 @@ const Project = () => {
   return (
     <div>
       <Navbar />
-      <HeroImg2 heading="PROJECT'S" text="Some of my recent work samples..." />
+      <HeroImg2
+        heading='Data Engineering Projects'
+        text='Production-style ETL, warehouse, data quality, and cloud migration case studies.'
+      />
       <Work />
       <Footer />
     </div>
