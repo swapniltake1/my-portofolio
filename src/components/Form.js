@@ -31,7 +31,7 @@ const Form = () => {
           <a href={`mailto:${email}`}>{email}</a>
           <a href='https://www.linkedin.com/in/swapniltake1' target='_blank' rel='noreferrer'>LinkedIn</a>
           <a href='https://github.com/swapniltake1' target='_blank' rel='noreferrer'>GitHub</a>
-          <a href='https://www.youtube.com/@thecodebreaker' target='_blank' rel='noreferrer'>YouTube</a>
+          <a href='https://www.youtube.com/@CodeWithSwap' target='_blank' rel='noreferrer'>YouTube</a>
           <button type='button' onClick={copyEmail}>{copied ? 'Email Copied' : 'Copy Email'}</button>
         </div>
       </div>
