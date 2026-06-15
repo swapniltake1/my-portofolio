@@ -40,3 +40,7 @@ const Form = () => {
 };
 
 export default Form;
+
+
+
+/* FormStyle.css */
