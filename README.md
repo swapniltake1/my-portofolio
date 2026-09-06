@@ -141,6 +141,4 @@ If you host at the root (example.com or username.github.io), remove the `/swapni
 - Update the files under `src/components` listed above to change content.
 - Commit and push to your branch, open a pull request for review.
 
-## License
 
-Add a LICENSE file if you want to make the repo open-source with a chosen license.
