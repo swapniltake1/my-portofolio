@@ -1,5 +1,5 @@
 .contact-section {
-    background: linear-gradient(180deg, #071013, #0c191d);
+    background: linear-gradient(180deg, var(--bg), var(--surface));
 }
 
 .contact-layout {

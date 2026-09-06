@@ -6,32 +6,32 @@ const Skills = () => {
     {
       number: '01',
       title: 'Languages',
-      items: 'Python, SQL, Shell Scripting, Java'
+      items: 'Python, SQL'
     },
     {
       number: '02',
       title: 'Data Engineering',
-      items: 'ETL, ELT, data modeling, data warehousing, reconciliation, data quality rules'
+      items: 'ETL/ELT, data ingestion, dimensional modeling, fact and dimension tables, schema evolution'
     },
     {
       number: '03',
-      title: 'Databases',
-      items: 'DB2, Oracle, MySQL, PostgreSQL, query tuning, stored procedures'
+      title: 'Big Data and Processing',
+      items: 'Apache Spark, PySpark, Spark SQL, Delta Lake'
     },
     {
       number: '04',
-      title: 'Big Data and Cloud',
-      items: 'Spark, Hadoop, AWS S3, AWS Glue, Lambda, Azure Data Factory'
+      title: 'Cloud and Platforms',
+      items: 'Azure Data Factory, Azure Databricks, ADLS Gen2, Azure Blob Storage, Azure Synapse'
     },
     {
       number: '05',
-      title: 'Orchestration',
-      items: 'Airflow, Control-M, Jenkins, scheduled batch operations, job monitoring'
+      title: 'DevOps and Delivery',
+      items: 'Git, CI/CD, Azure DevOps, JIRA, Agile/Scrum'
     },
     {
       number: '06',
-      title: 'Analytics',
-      items: 'Power BI, Tableau, dashboard-ready datasets, KPI extracts, reporting support'
+      title: 'Data Quality',
+      items: 'Validation, reconciliation, logging, auditing, exception handling, CDC, incremental loading'
     }
   ];
 

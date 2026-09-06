@@ -10,8 +10,27 @@
   --blue: #49a7ff;
   --teal: #44d0bd;
   --amber: #f3b44b;
+  --hero-overlay: rgba(7, 16, 19, 0.95);
+  --hero-overlay-soft: rgba(7, 16, 19, 0.28);
+  --hero-copy: #d8e7eb;
   --shadow: 0 22px 70px rgba(0, 0, 0, 0.35);
   --max: 1180px;
+}
+
+:root[data-theme='light'] {
+  --bg: #f4f7f6;
+  --surface: #ffffff;
+  --surface-strong: #e6efed;
+  --text: #102326;
+  --muted: #53686b;
+  --line: rgba(16, 35, 38, 0.16);
+  --blue: #1672c4;
+  --teal: #087f72;
+  --amber: #a76000;
+  --hero-overlay: rgba(244, 247, 246, 0.92);
+  --hero-overlay-soft: rgba(244, 247, 246, 0.42);
+  --hero-copy: #30484b;
+  --shadow: 0 22px 70px rgba(16, 35, 38, 0.12);
 }
 
 * {
@@ -62,6 +81,10 @@ img {
 
 .section-muted {
   background: #0a171b;
+}
+
+:root[data-theme='light'] .section-muted {
+  background: #eaf1ef;
 }
 
 .eyebrow {

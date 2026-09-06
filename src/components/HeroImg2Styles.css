@@ -5,7 +5,7 @@
     align-items: center;
     padding-top: 100px;
     overflow: hidden;
-    background: #071013;
+    background: var(--bg);
 }
 
 .hero-img::before {
@@ -13,7 +13,7 @@
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(90deg, rgba(7, 16, 19, 0.95), rgba(7, 16, 19, 0.68)),
+        linear-gradient(90deg, var(--hero-overlay), var(--hero-overlay-soft)),
         url('../assets/data-engineering-hero.png');
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@
 
 .hero-img p:not(.eyebrow) {
     max-width: 720px;
-    color: #d8e7eb;
+    color: var(--hero-copy);
     font-size: 1.12rem;
 }
 

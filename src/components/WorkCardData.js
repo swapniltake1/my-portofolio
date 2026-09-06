@@ -1,56 +1,56 @@
 const ProjectCardData = [
   {
-    title: 'Enterprise Data Warehouse Pipeline',
-    category: 'Batch ETL',
-    stack: 'SQL, Python, DB2, Control-M',
+    title: 'BFSI Medallion Data Platform',
+    category: 'Azure Data Engineering',
+    stack: 'ADF, Databricks, ADLS Gen2, PySpark, Delta Lake',
     summary:
-      'Designed a staged ingestion pipeline that loads source data, applies transformations, validates counts, and publishes curated warehouse tables for reporting.',
+      'Built a three-layer Bronze, Silver, and Gold architecture for finance and marketing datasets, moving raw source data into curated analytics-ready tables.',
     highlights: [
-      'Added source-to-target reconciliation checks.',
-      'Automated duplicate and null validations.',
-      'Created restart-friendly processing steps.'
+      'Implemented watermark and CDC-based incremental processing.',
+      'Developed business-driven fact and dimension models.',
+      'Added monitoring, reconciliation, and exception handling.'
     ],
     source: 'https://github.com/swapniltake1',
     view: 'https://github.com/swapniltake1'
   },
   {
-    title: 'Customer Analytics ETL Framework',
-    category: 'Analytics ETL',
-    stack: 'Oracle, SQL, Power BI',
+    title: 'Multi-Source Ingestion Workflows',
+    category: 'Data Ingestion',
+    stack: 'ADF, SQL Server, Oracle, REST APIs, CSV, JSON',
     summary:
-      'Built reusable transformations for customer activity metrics, dimension enrichment, and dashboard-ready KPI tables consumed by reporting teams.',
+      'Designed reusable ingestion workflows for structured and semi-structured data from five source types, with validation and failure handling built into each flow.',
     highlights: [
-      'Improved joins and indexes for faster loads.',
-      'Standardized metric definitions across reports.',
-      'Documented lineage from source to dashboard.'
+      'Parameterized workflows to reduce repeated development effort.',
+      'Added logging, auditing, and data quality checks.',
+      'Supported reliable downstream reporting datasets.'
     ],
     source: 'https://github.com/swapniltake1',
     view: 'https://github.com/swapniltake1'
   },
   {
-    title: 'Automated Data Quality Monitoring',
-    category: 'Data Quality',
-    stack: 'Python, Airflow, SQL',
+    title: 'Performance and Quality Engineering',
+    category: 'Optimization',
+    stack: 'PySpark, Spark SQL, Python, Delta Lake',
     summary:
-      'Implemented automated checks for nulls, duplicates, schema drift, thresholds, and load freshness before downstream jobs were triggered.',
+      'Applied Spark and SQL optimization patterns alongside validation and reconciliation controls to make production data processing faster and more trustworthy.',
     highlights: [
-      'Generated daily validation summaries.',
-      'Added severity levels for critical datasets.',
-      'Improved failure messages for production triage.'
+      'Reduced PySpark processing time by 40%.',
+      'Improved reporting performance by 50%.',
+      'Supported root-cause analysis and SLA-driven fixes.'
     ],
     source: 'https://github.com/swapniltake1',
     view: 'https://github.com/swapniltake1'
   },
   {
-    title: 'Cloud Data Lake Migration',
-    category: 'Cloud Data Platform',
-    stack: 'AWS S3, Glue, Spark',
+    title: 'Production ETL Operations',
+    category: 'Reliability and Support',
+    stack: 'Azure DevOps, ADF, Databricks, Synapse',
     summary:
-      'Planned a cloud-ready landing zone for structured data with raw, cleansed, and curated zones, catalog tables, and partitioned storage.',
+      'Supported scheduled production pipelines from monitoring through troubleshooting, root-cause analysis, deployment coordination, and stakeholder communication.',
     highlights: [
-      'Defined storage standards for new sources.',
-      'Mapped warehouse entities to data lake zones.',
-      'Prepared cost-aware batch processing patterns.'
+      'Tracked pipeline failures and resolved issues within SLA.',
+      'Coordinated fixes and releases through Azure DevOps.',
+      'Collaborated with analysts, architects, QA, and business stakeholders.'
     ],
     source: 'https://github.com/swapniltake1',
     view: 'https://github.com/swapniltake1'

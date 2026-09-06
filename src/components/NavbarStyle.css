@@ -15,7 +15,7 @@
 .header-bg {
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: rgba(7, 16, 19, 0.9);
+    background-color: var(--bg);
     border-color: var(--line);
     backdrop-filter: blur(18px);
 }
@@ -89,6 +89,25 @@
     padding: 12px;
 }
 
+.theme-toggle {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text);
+    cursor: pointer;
+    transition: transform 180ms ease, background 180ms ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.16);
+}
+
 @media screen and (max-width: 1040px) {
     .header {
         padding-left: 16px;
@@ -101,7 +120,7 @@
         align-items: center;
         width: 100%;
         height: 100vh;
-        background: rgba(7, 16, 19, 0.96);
+        background: var(--bg);
         position: absolute;
         top: 0;
         left: -100%;
@@ -123,6 +142,10 @@
 
     .hamburger {
         display: inline-flex;
+    }
+
+    .theme-toggle {
+        margin-left: auto;
     }
 }
 

@@ -3,7 +3,7 @@ import './FormStyle.css';
 
 const Form = () => {
   const [copied, setCopied] = useState(false);
-  const email = 'swapniltake1@outlook.com';
+  const email = 'takeswapnil8@gmail.com';
 
   const copyEmail = async () => {
     try {
@@ -22,8 +22,8 @@ const Form = () => {
           <p className='eyebrow'>Contact</p>
           <h2>Open to data engineering roles and collaborations.</h2>
           <p>
-            Best fit: ETL development, SQL engineering, warehouse support, cloud data migration,
-            and analytics platform work.
+            Best fit: Azure data engineering, ETL development, PySpark optimization, warehouse
+            modeling, data quality, and production pipeline support.
           </p>
         </div>
 
@@ -31,7 +31,6 @@ const Form = () => {
           <a href={`mailto:${email}`}>{email}</a>
           <a href='https://www.linkedin.com/in/swapniltake1' target='_blank' rel='noreferrer'>LinkedIn</a>
           <a href='https://github.com/swapniltake1' target='_blank' rel='noreferrer'>GitHub</a>
-          <a href='https://www.youtube.com/@CodeWithSwap' target='_blank' rel='noreferrer'>YouTube</a>
           <button type='button' onClick={copyEmail}>{copied ? 'Email Copied' : 'Copy Email'}</button>
         </div>
       </div>

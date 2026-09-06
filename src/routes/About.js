@@ -12,7 +12,7 @@ export const About = () => {
       <Navbar />
       <HeroImg2
         heading='About Swapnil'
-        text='Data Engineer with 2.5 years of experience across ETL, SQL, Python, data quality, and analytics workflows.'
+        text='Data Engineer with 2.6+ years of experience building Azure ETL/ELT pipelines with PySpark, Python, SQL, and Delta Lake.'
       />
       <AboutContent />
       <Experience />

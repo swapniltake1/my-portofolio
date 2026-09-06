@@ -3,10 +3,10 @@ import './CertificationsStyle.css';
 
 const Certifications = () => {
   const focusAreas = [
-    'SQL performance tuning',
-    'Python for data automation',
-    'AWS data engineering fundamentals',
-    'Power BI data modeling'
+    'Databricks Certified: Data Engineer Associate',
+    'Microsoft Certified: Fabric Data Engineer Associate',
+    'Microsoft Certified: Azure AI Fundamentals',
+    'HackerRank Certified: SQL (Advanced)'
   ];
 
   return (

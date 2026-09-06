@@ -1,6 +1,6 @@
 .footer {
     border-top: 1px solid var(--line);
-    background: #061013;
+    background: var(--surface);
     padding: 34px 0 26px;
 }
 

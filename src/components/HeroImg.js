@@ -12,11 +12,11 @@ const HeroImg = () => {
       </div>
 
       <div className='content'>
-        <p className='eyebrow'>2.5 years of practical data engineering experience</p>
-        <h1>Building reliable pipelines that turn enterprise data into decisions.</h1>
+        <p className='eyebrow'>Data Engineer · Accenture · Pune, India</p>
+        <h1>Engineering dependable data products from source to insight.</h1>
         <p className='hero-copy'>
-          Data Engineer focused on SQL optimization, ETL development, data quality automation,
-          warehousing, and cloud-ready analytics workflows.
+          Data Engineer with 2.6+ years of experience building scalable ETL/ELT pipelines
+          and cloud data solutions with Azure, PySpark, Python, and SQL.
         </p>
 
         <div className='hero-actions'>
@@ -28,16 +28,16 @@ const HeroImg = () => {
 
       <div className='hero-kpis container'>
         <article>
-          <strong>25M+</strong>
-          <span>records processed across batch pipelines</span>
+            <strong>5+</strong>
+            <span>source types integrated into ingestion workflows</span>
         </article>
         <article>
-          <strong>18+</strong>
-          <span>ETL workflows delivered and maintained</span>
+            <strong>40%</strong>
+            <span>faster PySpark processing through optimization</span>
         </article>
         <article>
-          <strong>99.5%</strong>
-          <span>pipeline availability target supported</span>
+            <strong>50%</strong>
+            <span>reporting performance improvement delivered</span>
         </article>
       </div>
     </div>

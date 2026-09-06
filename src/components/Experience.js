@@ -13,31 +13,32 @@ const Experience = () => {
         <div className='timeline'>
           <article>
             <div className='timeline-dot'></div>
-            <p className='time'>2024 - Present</p>
-            <h3>Data Engineer</h3>
+            <p className='time'>05/2026 - Present · Accenture</p>
+            <h3>Packaged App Development Analyst</h3>
             <p>
-              Build and maintain ETL pipelines, optimize SQL transformations, monitor production jobs,
-              and automate validation checks for large enterprise datasets.
+              Develop end-to-end ETL/ELT pipelines for finance and marketing data, integrate 5+ source
+              types, and build fact and dimension tables with Azure Data Factory, Databricks, PySpark,
+              Python, SQL, and ADLS Gen2.
             </p>
           </article>
 
           <article>
             <div className='timeline-dot'></div>
-            <p className='time'>2023 - 2024</p>
-            <h3>Associate Data Engineer</h3>
+            <p className='time'>04/2024 - 04/2026 · Accenture</p>
+            <h3>Packaged App Development Associate</h3>
             <p>
-              Supported data warehouse loads, created reusable scripts, fixed reconciliation issues,
-              and partnered with reporting teams to deliver analytics-ready tables.
+              Developed reusable PySpark transformations and parameterized ETL workflows using Azure
+              Data Factory, ADLS Gen2, Azure Synapse, and SQL, reducing development effort by 30%.
             </p>
           </article>
 
           <article>
             <div className='timeline-dot'></div>
-            <p className='time'>Daily Practices</p>
-            <h3>Production Mindset</h3>
+            <p className='time'>Impact delivered</p>
+            <h3>Optimization and production support</h3>
             <p>
-              Focus on job reliability, clear runbooks, incident resolution, root-cause analysis,
-              and measurable improvements to processing time and data accuracy.
+              Applied PySpark and SQL optimization to reduce processing time by 40% and improve
+              reporting performance by 50%, while supporting monitoring, troubleshooting, and releases.
             </p>
           </article>
         </div>
