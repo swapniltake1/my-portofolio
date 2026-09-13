@@ -1,5 +1,6 @@
 import './AboutContentStyle.css';
 import React from 'react';
+import ProfileImg from './ProfileImg';
 
 const AboutContent = () => {
   return (
@@ -9,6 +10,7 @@ const AboutContent = () => {
           <p className='eyebrow'>About</p>
           <h2>Cloud data engineering with production ownership.</h2>
         </div>
+        <ProfileImg />
         <div className='about-copy'>
           <p>
             I am a Data Engineer with 2.6+ years of experience designing, developing,
