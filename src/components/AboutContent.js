@@ -4,14 +4,14 @@ import ProfileImg from './ProfileImg';
 
 const AboutContent = () => {
   return (
-    <section className='about section'>
-      <div className='container about-grid'>
-        <div className='section-intro'>
-          <p className='eyebrow'>About</p>
+    <section className="about section">
+      <div className="container about-grid">
+        <div className="section-intro">
+          <p className="eyebrow">About</p>
           <h2>Cloud data engineering with production ownership.</h2>
         </div>
         <ProfileImg />
-        <div className='about-copy'>
+        <div className="about-copy">
           <p>
             I am a Data Engineer with 2.6+ years of experience designing, developing,
             and supporting enterprise data solutions at Accenture. I work across Azure
