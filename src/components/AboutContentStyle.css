@@ -1,64 +1,81 @@
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: clamp(36px, 7vw, 96px);
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(36px, 7vw, 96px);
+  align-items: start;
 }
 
 .section-intro {
-    position: sticky;
-    top: 112px;
+  position: sticky;
+  top: 112px;
 }
 
 .profile-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    border: 3px solid #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .profile-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+:root[data-theme='light'] .profile-img {
+  border-color: rgba(16, 35, 38, 0.2);
+}
+
+:root[data-theme='light'] .profile-img:hover {
+  border-color: rgba(16, 35, 38, 0.4);
 }
 
 .about-copy {
-    color: #d5e3e7;
-    font-size: 1.04rem;
+  color: #d5e3e7;
+  font-size: 1.04rem;
+}
+
+:root[data-theme='light'] .about-copy {
+  color: #30484b;
 }
 
 .about-copy p + p {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 
 @media screen and (max-width: 920px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .section-intro {
-        position: static;
-    }
-    
-    .profile-img {
-        width: 200px;
-        height: 200px;
-    }
+  .section-intro {
+    position: static;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .profile-img {
-        width: 150px;
-        height: 150px;
-    }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-img-container {
+    margin: 1rem 0;
+  }
 }
