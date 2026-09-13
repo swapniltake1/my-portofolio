@@ -3,13 +3,6 @@ import React from "react";
 import ProfileImg from "./ProfileImg";
 
 const AboutContent = () => {
-  const skills = [
-    "Agentic AI",
-    "RAG Systems",
-    "LLM Integration",
-    "Multi-Agent Orchestration",
-  ];
-
   return (
     <section className="about section">
       <div className="container about-grid">
